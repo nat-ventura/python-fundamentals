@@ -10,7 +10,7 @@ def facty():
     product = inputNum
 
     if inputNum > 0:
-        for i in range(1, inputNum + 1):
+        for i in range(2, inputNum + 1):
             print 'product is ', product
             print 'multiplying index', i, '* product', product
             product = i * product
