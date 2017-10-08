@@ -1,11 +1,25 @@
 # sum.py
 # Computes the sum of the first 4 positive integer
 
-sum = 0
+def summy():
+    inputNum = int(input('please give me a positive integer and' +
+               ' i will output the first "n" positive integers' +
+               ' of my summy function: '))
+    sum = 0
 
-for i in range(1, 5):
-    print 'sum is', sum
-    print 'index is', i
-    print 'adding', sum, '+', i
-    sum = sum + i
-print 'the sum of the first', i, 'positive integers is', sum
+    if inputNum == 0:
+        print "zero is not a positive integer, i have nothing to sum! bye"
+
+    elif inputNum < 0:
+        for i in range(0, inputNum, -1):
+        print 'adding index', i, 'to sum', sum
+        sum = i + sum
+        print 'this is my summm :)', sum
+
+    else:
+        for i in range(inputNum):
+        print 'adding index', i, 'to sum', sum
+        sum = i + sum
+        print 'this is my summm :)', sum
+
+summy()
