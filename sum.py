@@ -12,14 +12,14 @@ def summy():
 
     elif inputNum < 0:
         for i in range(0, inputNum, -1):
-        print 'adding index', i, 'to sum', sum
-        sum = i + sum
-        print 'this is my summm :)', sum
+            print 'adding index', i, 'to sum', sum
+            sum = i - sum
+            print 'this is my summm :)', sum
 
     else:
         for i in range(inputNum):
-        print 'adding index', i, 'to sum', sum
-        sum = i + sum
-        print 'this is my summm :)', sum
+            print 'adding index', i, 'to sum', sum
+            sum = i + sum
+            print 'this is my summm :)', sum
 
 summy()
