@@ -9,7 +9,7 @@ def fibonacci():
     current = 1
     previous = 1
 
-    for i in range(2, n + 1):
+    for i in range(n):
         previous = current
         current = current + previous
 
