@@ -6,6 +6,8 @@ def fibonacci():
     ' what fibonacci number is in that place.')
 
     n = int(input('what number? '))
+    current = 1
+    previous = 1
 
 
 fibonacci()
