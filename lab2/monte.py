@@ -15,5 +15,6 @@ def monte():
             hits += 1
 
     approx = 4 * (hits / darts)
+    print("the value of pi after", darts, "iterations is", approx)
 
 monte()
