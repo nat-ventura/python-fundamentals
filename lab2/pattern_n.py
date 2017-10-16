@@ -7,7 +7,7 @@ def first_last():
         print(' ', end='')
     print('*')
 
-def print_middle(num):
+def middle(num):
     print('*', end='')
 
     spaces_before = num - 1
@@ -21,3 +21,12 @@ def print_middle(num):
         print(' ', end='')
 
     print('*')
+
+def make_n():
+    n = int(input('please give me a number n: '))
+    first_last()
+    for row in range(n):
+        middle(row)
+    first_last()
+
+make_n()
